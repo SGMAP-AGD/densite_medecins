@@ -30,3 +30,21 @@ gpp2013_2 <- gpp2013_1 %>%
   summarise(n = sum(n))
 
 save(gpp2013, gpp2013_1, gpp2013_2, file = "data/pp.Rda")
+
+gpp2013_total <- gpp2013_2 %>% 
+  filter(sexe == "total", catage != "Total") 
+
+gpp2013_total_dept <- gpp2013_total %>% 
+  group_by(codep) %>% 
+  summarise(total = sum(n))
+
+gpp2013_total2 <- merge(gpp2013_total, gpp2013_total_dept, by = "codep")
+gpp2013_total2$share_cat_age <- 100 * gpp2013_total2$n / gpp2013_total2$total
+
+sgpp2013 <- gpp2013_total2 %>% 
+  select(codep, catage, share_cat_age) %>% 
+  spread(key = catage  , value = share_cat_age)
+
+names(sgpp2013) <- sub(pattern = "^([[:digit:]].*)", replacement = "sh\\1", x = 
+      gsub(pattern = "[[:blank:]]", replacement = "_", x = names(sgpp2013)))
+
