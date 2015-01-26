@@ -16,7 +16,7 @@ damir2013_2$acte_affilies <- damir2013_2$nb_actes / damir2013_2$pop_affiliee
 damir2013_2$densite_medecins <- damir2013_2$effectifs / damir2013_2$pop_affiliee * 10^5
 
 sum(damir2013_2$nb_actes) / sum(damir2013_2$pop_affiliee)
-sum(damir2013_2$effectifs) / sum(damir2013_2$pop_affiliee) 
+sum(damir2013_2$effectifs) / sum(damir2013_2$pop_affiliee) * 10^5 
 
 png("output/nb_consultations_densite_medecins.png", width = 840, height = 680)
 ggplot(damir2013_2, aes(x = densite_medecins, y = acte_affilies)) + 

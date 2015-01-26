@@ -26,10 +26,13 @@ Densité de médecins pour 100 000 habitants
 
 ![image](output/densite_de_medecin_pour_100000.png)
 
+* Moyenne : 175 généralistes pour 100 000 habitants
+
 Nombre d'actes par affiliés : 
 
 ![image](output/med_gale_ratio_conso_sur_dispo_carte_gqis.png)
 
+* Moyenne : 4 consultations chez un généraliste par an
 
 ## Effet de la densité de médecins sur la consommation
 
@@ -42,9 +45,13 @@ Champs : Population des affiliés au 1er janvier 2013. Actes C et V. Médecins g
 * Modèle simple : +100 médecins (pour 100 000 habitants) -> augmente de 0,9 le nombre de consultations par an. 
 
 * Effet offre ou effet demande ? 
-** On contrôle par la structure d'âge du département : +100 médecins (pour 100 000 habitants) -> augmente de 0,5 le nombre de consultations par an. 
+	* On contrôle par la structure d'âge du département : +100 médecins (pour 100 000 habitants) -> augmente de 0,5 le nombre de consultations par an. 
+	* On contrôle par les revenus du département (part de foyers imposables + revenu médian par foyer) : +100 médecins (pour 100 000 habitants) -> augmente de 0,6 le nombre de consultations par an. 
 
-** On contrôle par les revenus du département (part de foyers imposables + revenu médian par foyer) : +100 médecins (pour 100 000 habitants) -> augmente de 0,6 le nombre de consultations par an. 
+## Limites de l'exercice
+
+* Problème d'interprétation : effet d'induction (effet offre) ou demande révélée (effet demande) ? 
+* On n'a pas les données pour contrôler de l'état de santé réel de la population locale.
 	
 ## Pour aller plus loin
 
@@ -58,5 +65,14 @@ Nombre de consultations de pédiatrie en fonction de la densité de pédiatres:
 
 ![image](output/effet_densite_consultation_pediatrie.png)
 
+### Pistes d'améliorations
+
+* Plus grande profondeur temporelle (DAMIR + RPPS).  
+* Pouvoir ajouter des données épidémiologiques
+* Niveau géographie plus fin
+
+
+## Liens utiles
 
 * [framapad du projet](https://lite5.framapad.org/p/EOVpfEKN9n)
+
