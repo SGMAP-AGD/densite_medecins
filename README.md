@@ -10,7 +10,6 @@ On regarde l'effet de l'offre de soins (ie la densité de médecins) sur la cons
 * Nombre de médecins par département : Fichier RPPS 
 * Le nombre d'actes par département : fichiers R du DAMIR
 
-
 ### Champ de l'étude
 
 * On se restreint aux consultations chez le généraliste (sur place ou en visite).
@@ -45,8 +44,8 @@ Champs : Population des affiliés au 1er janvier 2013. Actes C et V. Médecins g
 * Modèle simple : +100 médecins (pour 100 000 habitants) -> augmente de 0,9 le nombre de consultations par an. 
 
 * Effet offre ou effet demande ? 
-	* On contrôle par la structure d'âge du département : +100 médecins (pour 100 000 habitants) -> augmente de 0,5 le nombre de consultations par an. 
-	* On contrôle par les revenus du département (part de foyers imposables + revenu médian par foyer) : +100 médecins (pour 100 000 habitants) -> augmente de 0,6 le nombre de consultations par an. 
+	* On contrôle par la structure d'âge des affiliés du département : +100 médecins (pour 100 000 habitants) -> augmente de 0,5 le nombre de consultations par an. 
+	* On contrôle par les revenus des ménages du département (part de foyers imposables + revenu médian par foyer) : +100 médecins (pour 100 000 habitants) -> augmente de 0,6 le nombre de consultations par an. 
 
 ## Limites de l'exercice
 
