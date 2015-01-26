@@ -70,7 +70,7 @@ Nombre de consultations de pédiatrie en fonction de la densité de pédiatres:
 * Plus grande profondeur temporelle (DAMIR + RPPS).  
 * Pouvoir ajouter des données épidémiologiques
 * Niveau géographie plus fin
-
+* Dans RPPS : Nombre de médecins réellement en exercice
 
 ## Liens utiles
 
